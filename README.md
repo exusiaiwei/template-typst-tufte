@@ -167,6 +167,12 @@ typst compile main.typ
   // 可选：Logo
   logo: image("logo.png", width: 3cm),
 
+  // 字体配置（可选，使用系统已安装的字体）
+  font: ("Linux Libertine", "Source Han Serif SC", "Noto Serif CJK SC", "SimSun"),
+  sansfont: ("Noto Sans", "Source Han Sans SC", "Noto Sans CJK SC", "SimHei"),
+  codefont: ("JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas"),
+  fontsize: 10pt,
+
   // 样式配置
   theme-color: rgb("#1B255A"),
   lang: "zh",
@@ -208,10 +214,12 @@ template-typst-tufte/
 - Typst 0.12.0+
 - `@preview/drafting:0.2.2` (自动安装)
 
-推荐字体（可选）：
-- Linux Libertine / Noto Serif CJK SC
-- Noto Sans / Source Han Sans SC
-- JetBrains Mono / Fira Code
+推荐字体（可选，模板会自动回退）：
+- **正文字体**: Linux Libertine, Source Han Serif SC, Noto Serif CJK SC
+- **无衬线字体**: Noto Sans, Source Han Sans SC, Noto Sans CJK SC
+- **代码字体**: JetBrains Mono, Fira Code, Cascadia Code, Consolas
+
+💡 **提示**: 模板支持完全自定义字体，只需在配置中传入 `font`、`sansfont`、`codefont` 参数即可。
 
 ### 📄 许可证
 
@@ -380,6 +388,12 @@ Configure the template in `main.typ`:
   // Optional: Logo
   logo: image("logo.png", width: 3cm),
 
+  // Font configuration (optional, uses system-installed fonts)
+  font: ("Linux Libertine", "Source Han Serif SC", "Noto Serif CJK SC", "SimSun"),
+  sansfont: ("Noto Sans", "Source Han Sans SC", "Noto Sans CJK SC", "SimHei"),
+  codefont: ("JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas"),
+  fontsize: 10pt,
+
   // Style
   theme-color: rgb("#1B255A"),
   lang: "en",
@@ -421,10 +435,12 @@ template-typst-tufte/
 - Typst 0.12.0+
 - `@preview/drafting:0.2.2` (auto-installed)
 
-Recommended fonts (optional):
-- Linux Libertine / Noto Serif CJK SC
-- Noto Sans / Source Han Sans SC
-- JetBrains Mono / Fira Code
+Recommended fonts (optional, template will auto-fallback):
+- **Serif fonts**: Linux Libertine, Source Han Serif SC, Noto Serif CJK SC
+- **Sans-serif fonts**: Noto Sans, Source Han Sans SC, Noto Sans CJK SC
+- **Monospace fonts**: JetBrains Mono, Fira Code, Cascadia Code, Consolas
+
+💡 **Tip**: Template supports full font customization via `font`, `sansfont`, and `codefont` parameters.
 
 ### 📄 License
 

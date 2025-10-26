@@ -19,6 +19,12 @@
   // 可选：添加机构Logo（取消注释并提供图片路径）
   // logo: image("logo.png", width: 3cm),
 
+  // 可选：自定义字体（默认值如下，可根据系统字体修改）
+  // font: ("Linux Libertine", "Source Han Serif SC", "Noto Serif CJK SC", "SimSun"),
+  // sansfont: ("Noto Sans", "Source Han Sans SC", "Noto Sans CJK SC", "SimHei"),
+  // codefont: ("JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas"),
+  // fontsize: 10pt,
+
   toc: true,
   toc-depth: 2,
 
